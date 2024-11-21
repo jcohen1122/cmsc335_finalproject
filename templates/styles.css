@@ -1,0 +1,40 @@
+html, body {
+    font-size: 20px;
+    padding: 1rem;
+}
+
+#header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: gray;
+    border: 4px solid black;
+    height: 4rem;
+    color: white;
+}
+
+#availablePlayers {
+    border: 4px solid black;
+    height: 10rem;
+    width: 30rem;
+    width: 60rem;
+    padding: 10px;
+}
+
+#playerForm {
+    width: 5rem;
+}
+
+#teamContainer {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#currentRoster {
+    width: 30rem;
+    height: 9rem;
+    border: 4px solid black;
+}

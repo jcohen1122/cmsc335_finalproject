@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Football Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">Fantasy Football Manager</div>
+
+    <h2>Available Players</h2>
+    <textarea id="availablePlayers" readonly>
+<%= availablePlayers.map(p => `${p.firstName} ${p.lastName}`).join('\n') %>
+    </textarea>
+
+    <h2>My Team</h2>
+    <div id="teamContainer">
+        <form id="playerForm" action="/add-player" method="post">
+            <fieldset legend="Add Player to Team">
+                First Name <input type="text" id="firstname" name="firstName" required>
+                <br><br>
+                Last Name <input type="text" id="lastname" name="lastName" required>
+                <br><br>
+                <button type="reset">Reset</button>
+                <button type="submit">Add</button>
+            </fieldset>
+        </form>
+
+        <textarea id="currentRoster" readonly>
+<%= teamPlayers.map(p => `${p.firstName} ${p.lastName}`).join('\n') %>
+        </textarea>
+    </div>
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "cmsc335_finalproject",
+  "version": "1.0.0",
+  "description": "CMSC335 Final Project Josh, Zach, Ishan",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

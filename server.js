@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs"); // Use EJS as the templating engine
 app.set("views", path.join(__dirname, "views")); // Define the views directory
+app.use(express.static("views"));
 
 // Load MongoDB credentials
 const {
